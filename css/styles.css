@@ -3,9 +3,8 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
-  background-color: black;
 }
 
 .song {
@@ -20,6 +19,7 @@ body {
   text-align: center;
   visibility: hidden;
   width: 100vw;
+  background-color: #020202;
   color: #fff;
 }
 
@@ -31,26 +31,23 @@ body {
 }
 
 .one {
-  font-size: 4.5rem;
-  margin-top: 80px;
+  font-size: 3.5rem;
 }
 
 .two {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: lighter;
-  margin-top: -40px;
+  margin-top: -30px;
 }
 
 .three {
   font-size: 3rem;
-  margin-top: 140px;
 }
 
 .four .text-box {
   border: 3px solid #aaa;
   border-radius: 5px;
   margin: 0 auto;
-  margin-top: 130px;
   padding: 10px;
   position: relative;
   width: 600px;
@@ -70,7 +67,7 @@ body {
   border-radius: 3px;
   bottom: -50px;
   color: #fff;
-  padding: 0.5rem 1rem;
+  padding: .5rem 1rem;
   position: absolute;
   right: 5px;
 }
@@ -80,7 +77,6 @@ body {
   left: 0;
   position: absolute;
   right: 0;
-  margin-top: 150px;
 }
 
 .idea-3 strong {
@@ -90,21 +86,17 @@ body {
 }
 
 .five .idea-5 {
-  font-size: 4rem;
-  margin-top: 90px;
+  font-size: 3rem;
 }
 
-.idea-5 span,
-.idea-6 span,
-.wish-hbd span {
+.idea-5 span, .idea-6 span, .wish-hbd span {
   display: inline-block;
-  margin-top: 20px;
 }
 
-.idea-6 span {
-  font-size: 15rem;
-  margin-top: -80px;
+.idea-6 span{
+  font-size: 12rem;
 }
+
 
 .six {
   position: relative;
@@ -113,17 +105,15 @@ body {
 }
 
 .six img {
-  border-radius: 100px;
   display: inline-block;
   height: 350px;
   max-width: 100%;
+  border-radius: 30%;
   /* height: auto; */
 }
 
 .six .hat {
   left: 41.5%;
-  margin-left: 200px;
-  margin-top: -50px;
   position: absolute;
   /* transform: scale(0.1); */
   top: -35%;
@@ -147,8 +137,7 @@ body {
   left: 30%;
 }
 
-.seven,
-.eight {
+.seven, .eight {
   height: 100vh;
   position: fixed;
   top: 0;
@@ -230,15 +219,10 @@ body {
   margin: 10px 0 0;
 }
 
-.nine {
-  margin-top: 130px;
-}
-
 .nine p {
   font-size: 2rem;
   font-weight: lighter;
 }
-
 
 #replay {
   cursor: pointer;
@@ -250,11 +234,19 @@ body {
   .six .hat {
     left: 40%;
   }
+  .baloon img {
+    width: 70%;
+    height: 70%;
+  }
 }
 
 @media screen and (max-height: 800px) {
   .six .hat {
     left: 37%;
+  }
+   .baloon img {
+    width: 60%;
+    height: 60%;
   }
 }
 
@@ -262,17 +254,30 @@ body {
   .six .hat {
     left: 32%;
   }
+   .baloon img {
+    width: 50%;
+    height: 50%;
+  }
 }
 
 @media screen and (max-height: 850px) and (max-width: 450px) {
   .six .hat {
     left: 32%;
   }
+   .baloon img {
+    width: 40%;
+    height: 40%;
+  }
 }
 
 @media screen and (max-width: 500px) {
   .container {
-    width: 90%;
+    width: 100%;
+  }
+
+  .baloon img {
+    width: 30%;
+    height: 30%;
   }
 
   .four .text-box {
@@ -282,7 +287,6 @@ body {
   .text-box .fake-btn {
     bottom: -38px;
     right: 5px;
-    margin-top: 10px;
   }
 
   .idea-5 span {
@@ -304,6 +308,11 @@ body {
 
   .wish h5 {
     font-size: 1.4rem;
+  }
+
+  .seven {
+    height: auto;
+    width: auto;
   }
 
   .nine p {
