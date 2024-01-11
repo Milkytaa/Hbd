@@ -118,6 +118,8 @@ body {
   /* transform: scale(0.1); */
   top: -35%;
   width: 80px;
+  margin-top: 30px;
+  margin-left: 70px;
 }
 
 .baloons img {
@@ -231,9 +233,6 @@ body {
 
 /* Media Queries */
 @media screen and (max-height: 1000px) {
-  .six .hat {
-    left: 40%;
-  }
   .baloon img {
     width: 70%;
     height: 70%;
@@ -241,9 +240,6 @@ body {
 }
 
 @media screen and (max-height: 800px) {
-  .six .hat {
-    left: 37%;
-  }
    .baloon img {
     width: 60%;
     height: 60%;
@@ -251,9 +247,6 @@ body {
 }
 
 @media screen and (max-height: 700px) {
-  .six .hat {
-    left: 32%;
-  }
    .baloon img {
     width: 50%;
     height: 50%;
@@ -261,29 +254,30 @@ body {
 }
 
 @media screen and (max-height: 850px) and (max-width: 450px) {
-  .six .hat {
-    left: 32%;
-  }
-   .baloon img {
+  .six .hat{
+    margin-left: -20px;
+  } 
+  .baloon img {
     width: 40%;
     height: 40%;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .container {
-    width: 100%;
+  .six .hat{
+    margin-left: -20px;
   }
-
+  .container {
+   width: 100%;
+  }
   .baloon img {
     width: 30%;
     height: 30%;
   }
 
-  .four .text-box {
+ .four .text-box {
     width: 90%;
   }
-
   .text-box .fake-btn {
     bottom: -38px;
     right: 5px;
@@ -295,11 +289,6 @@ body {
 
   .idea-6 span {
     font-size: 10rem;
-  }
-
-  .six .hat {
-    /* top: -20px; */
-    width: 50px;
   }
 
   .wish-hbd {
@@ -318,5 +307,9 @@ body {
   .nine p {
     font-size: 1.5rem;
     font-weight: lighter;
+  }
+
+  .fake-btn {
+   margin-top: 20px;
   }
 }
